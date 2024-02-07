@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+// Uncomment the following lines if you want to add a custom palette:
+// $primary: #731963 !default;
+// $secondary: #ce5712 !default;
+// $app-palette: palette($primary, $secondary);
+
+/* autoprefixer grid: on */
+
+@mixin btn-color($color) {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: $color;
+    color: #ffffff;
+    border-radius: 0;
+    border: 1px solid $color;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    margin: 5px;
+    text-align: center;
+    width: 165px;
+}
+
+.orange-btn {
+    @include btn-color(#f89646);
+}
+
+.tosca-btn {
+    @include btn-color(#6bb7be);
+}
