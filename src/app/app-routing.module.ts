@@ -8,12 +8,32 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 
   {
     path: 'home',
-    loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
-  }
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
+  },
+  {
+    path: 'product',
+    loadChildren: () => import('./pages/product/product.module').then(m => m.ProductModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./pages/blog/blog.module').then(m => m.BlogModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
+  },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({

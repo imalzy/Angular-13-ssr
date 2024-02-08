@@ -7,16 +7,17 @@ import { AppComponent } from './app.component';
 // @Angular/Fire
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { environment } from 'src/environments/environment';
-import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { environment } from 'src/environments/environment';
+
+import { NavbarComponent } from './core/components/navbar/navbar.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

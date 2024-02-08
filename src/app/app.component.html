@@ -1,7 +1,9 @@
-<div class="hero_area">
+<div *ngIf="!isLogin">
   <app-navbar></app-navbar>
-  <app-carousel></app-carousel>
 </div>
 <main>
   <router-outlet></router-outlet>
 </main>
+<div *ngIf="!isLogin">
+  <app-footer></app-footer>
+</div>
