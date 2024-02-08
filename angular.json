@@ -101,7 +101,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [ "./node_modules/hammerjs/hammer.min.js"]
+            "scripts": [
+              "./node_modules/hammerjs/hammer.min.js"
+            ]
           }
         },
         "server": {
@@ -147,8 +149,16 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
+            "browserTarget": "technical-req-angular-13:build:production",
+            "serverTarget": "technical-req-angular-13:server:production",
             "routes": [
-              "/"
+              "/",
+              "/home",
+              "/about",
+              "/product",
+              "/blog",
+              "/contact",
+              "/auth"
             ]
           },
           "configurations": {
