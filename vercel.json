@@ -1,7 +1,7 @@
 {
     "version": 2,
     "public": true,
-    "name": "technical-req-angular-13/package.json",
+    "name": "technical-req-angular-13",
     "rewrites": [
       {
         "source": "/(.*)",
@@ -10,7 +10,7 @@
     ],
     "functions": {
       "api/index.js": {
-        "includeFiles": "dist/angular-vercel-ssr/**"
+        "includeFiles": "dist/technical-req-angular-13/**"
       }
     }
   }
