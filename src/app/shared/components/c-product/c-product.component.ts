@@ -3,11 +3,11 @@ import { FirestoreService } from '../../services/firestore.services';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+  selector: 'app-cproduct',
+  templateUrl: './c-product.component.html',
+  styleUrls: ['./c-product.component.scss']
 })
-export class ProductComponent implements OnInit {
+export class CProductComponent implements OnInit {
   products$!: Observable<IProduct[]>;
   constructor(private firestoreService: FirestoreService) { }
 

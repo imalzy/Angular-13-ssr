@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent as BlogPages } from './blog.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { CommonModule } from '@angular/common';
+import { CBlogModule } from 'src/app/shared/components/blog/c-blog.module';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     BlogPages
   ],
   imports: [
-    SharedModule,
+    CommonModule,
+    CBlogModule,
     BlogRoutingModule
   ]
 })
