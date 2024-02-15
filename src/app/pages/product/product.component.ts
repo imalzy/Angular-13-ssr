@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-product-page',
+  selector: 'app-cproduct',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })
